@@ -1,0 +1,119 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f7f5f0;
+  color: #333;
+}
+.toolbar {
+  text-align: center;
+  padding: 10px;
+  background: #f0f0f0;
+}
+.container {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+.sidebar {
+  width: 30%;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+.region h3 {
+  margin: 8px 0;
+  padding: 6px;
+  color: #fff;
+  border-radius: 4px;
+}
+.region.red h3 { background: #e74c3c; }
+.region.orange h3 { background: #e67e22; }
+.region.yellow h3 { background: #f1c40f; }
+.region.green h3 { background: #2ecc71; }
+.region.blue h3 { background: #3498db; }
+
+.province-btn {
+  display: inline-block;
+  margin: 4px;
+  padding: 6px 10px;
+  background: #ecf0f1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.province-btn:hover {
+  background: #bdc3c7;
+}
+.content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+#recipe-display {
+  text-align: center;
+}
+#recipe-display img {
+  max-width: 80%;
+  border-radius: 8px;
+  margin: 15px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.recipe-details {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.recipe-details ul, .recipe-details ol {
+  padding-left: 20px;
+}
+.recipe-details h4 {
+  margin: 12px 0 6px;
+  font-weight: bold;
+}
+/* 整个菜谱区域背景和文字颜色 */
+#recipe-display {
+  background-color: #fff8dc; /* 奶黄色 */
+  color: #5c4033;           /* 棕色文字 */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* 菜名 */
+#recipe-display h2 {
+  color: #5c4033;
+  font-weight: bold;
+}
+
+/* 小标题 */
+#recipe-display h4 {
+  color: #7b4b27;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* 返回主页按钮样式 */
+#back-button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #f5deb3; /* 奶黄色 */
+  color: #5c4033;            /* 棕色文字 */
+  border: 1px solid #d2b48c;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#back-button {
+  display: none;
+  margin-top: 20px;
+  background-color: #d2691e; /* 巧克力棕 */
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}

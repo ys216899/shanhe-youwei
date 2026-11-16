@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>4029- From Provinces to Plates: Discover Local Chinese Recipes </title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="toolbar">
+  <button id="lang-toggle">切换语言 / Switch Language</button>
+</div>
+
+<div class="container">
+  <aside class="sidebar">
+    <h2 id="title">选择省份 / Choose Province</h2>
+    <div class="region red">
+      <h3>华南 South China</h3>
+      <button class="province-btn" data-prov="Guangdong">广东 Guangdong</button>
+      <button class="province-btn" data-prov="Fujian">福建 Fujian</button>
+      <button class="province-btn" data-prov="Guangxi">广西 Guangxi</button>
+      <button class="province-btn" data-prov="Hainan">海南 Hainan</button>
+    </div>
+    <div class="region orange">
+      <h3>华东 East China</h3>
+      <button class="province-btn" data-prov="Shanghai">上海 Shanghai</button>
+      <button class="province-btn" data-prov="Jiangsu">江苏 Jiangsu</button>
+      <button class="province-btn" data-prov="Zhejiang">浙江 Zhejiang</button>
+      <button class="province-btn" data-prov="Shandong">山东 Shandong</button>
+    </div>
+    <div class="region yellow">
+      <h3>华中 Central</h3>
+      <button class="province-btn" data-prov="Jiangxi">江西 Jiangxi</button>
+      <button class="province-btn" data-prov="Hunan">湖南 Hunan</button>
+    </div>
+    <div class="region blue">
+      <h3>华北 North</h3>
+      <button class="province-btn" data-prov="Beijing">北京 Beijing</button>
+      <button class="province-btn" data-prov="Tianjin">天津 Tianjin</button>
+      <button class="province-btn" data-prov="Hebei">河北 Hebei</button>
+      <button class="province-btn" data-prov="Heilongjiang">黑龙江 Heilongjiang</button>
+      <button class="province-btn" data-prov="Jilin">吉林 Jilin</button>
+    </div>
+    <div class="region green">
+      <h3>西北 Northwest</h3>
+      <button class="province-btn" data-prov="Shaanxi">陕西 Shaanxi</button>
+      <button class="province-btn" data-prov="Gansu">甘肃 Gansu</button>
+      <button class="province-btn" data-prov="InnerMongolia">内蒙古 Inner Mongolia</button>
+    </div>
+  </aside>
+
+  <main class="content">
+    <!-- 初始内容 + 展示菜谱共用区域 -->
+    <div id="recipe-display">
+      <h2>请选择一个省份 / Please select a province</h2>
+      <img src="https://zh.maps-china-cn.com/img/1200/%E4%B8%AD%E5%9B%BD%E7%9C%81%E4%BB%BD%E5%9C%B0%E5%9B%BE.jpg"
+        style="max-width:90%; border-radius:12px; margin-top:20px;" />
+    </div>
+
+    <!-- 返回主页按钮（JS控制是否显示）-->
+    <button id="back-button" style="display: none;">← 返回主页 / Back to Home</button>
+  </main>
+</div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.31/vue.global.js'></script><script  src="./script.js"></script>
+
+  </body>
+  
+</html>
