@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
     backBtn.addEventListener("click", () => {
       document.getElementById("recipe-display").innerHTML = `
         <h2>请选择一个省份 / Please select a province</h2>
-        <img src="./山河有味美食地图.png"
+        <img src="./山河有味美食地图.PNG"
              style="max-width:90%; border-radius:12px; margin-top:20px;" />
       `;
       backBtn.style.display = "none";
